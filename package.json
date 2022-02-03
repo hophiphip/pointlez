@@ -2,16 +2,22 @@
   "name": "pointlez",
   "version": "0.0.1",
   "description": "Library for templating DOM on a web page.",
-  "main": "dist/pointlez.cjs.js",
-  "module": "dist/pointlez.esm.js",
-  "browser": "dist/pointlez.umd.js",
+  "main": "./dist/pointlez.cjs.js",
+  "module": "./dist/pointlez.esm.js",
+  "browser": "./dist/pointlez.umd.js",
   "scripts": {
     "build": "rollup -c",
     "test": "node test/spec",
     "pretest": "npm run build"
   },
-  "author": "hophiphip",
+  "author": { 
+    "name": "hophiphip"
+  },
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hophiphip/pointlez.git"
+  },
   "devDependencies": {
     "@babel/core": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
