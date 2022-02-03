@@ -1,8 +1,10 @@
-import { fromString, fromFile } from './from.js';
+import { updateFromString, updateFromFile } from './update.js';
+import { start } from './lifecycle.js';
 
 let Pointlez = {
-    fromString,
-    fromFile,
+    updateFromString,
+    updateFromFile,
+    start,
 };
 
 export default Pointlez;

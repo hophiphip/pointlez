@@ -3,6 +3,8 @@
  *
  * @param {keyof HTMLElementTagNameMap} selector
  * @returns {Promise<Node>}
+ * 
+ * TODO: Remove / Might not be needer in the future.
  */
 export function wait(selector) {
     return new Promise(resolve => {
