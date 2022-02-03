@@ -34,5 +34,5 @@ replaceWithString('#footer', '<p>Footer</p>');
 
 # Using the CDN
 ```html
-<script src="https://unpkg.com/pointlez@latest/dist/pointlez.umd.js"></script>
+<script defer src="https://unpkg.com/pointlez@latest/dist/pointlez.umd.js"></script>
 ```
