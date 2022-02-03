@@ -1,6 +1,6 @@
 {
   "name": "pointlez",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Library for templating DOM on a web page.",
   "main": "./dist/pointlez.cjs.js",
   "module": "./dist/pointlez.esm.js",
@@ -10,7 +10,7 @@
     "test": "node test/spec",
     "pretest": "npm run build"
   },
-  "author": { 
+  "author": {
     "name": "hophiphip"
   },
   "license": "MIT",
