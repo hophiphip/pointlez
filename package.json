@@ -1,0 +1,27 @@
+{
+  "name": "pointlez",
+  "version": "0.0.1",
+  "description": "Library for templating DOM on a web page.",
+  "main": "dist/pointlez.cjs.js",
+  "module": "dist/pointlez.esm.js",
+  "browser": "dist/pointlez.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "node test/spec",
+    "pretest": "npm run build"
+  },
+  "author": "hophiphip",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "rollup": "^2.67.0"
+  },
+  "files": [
+    "dist",
+    "src"
+  ]
+}
