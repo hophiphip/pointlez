@@ -1,17 +1,15 @@
-import { parse } from './utils/parse.js';
-import { replace } from './utils/replace.js';
+import { parse } from './parse.js';
+import { replace } from './replace.js';
 
-/** @constant {string} */
-const dataFromStringTag = '[data-from-string]';
-
-/** @constant {string} */
-const dataFromFileTag = '[data-from-file]'
+// TODO: updaters must receive a second param -- a callback for each element
 
 /**
- * Replace all elements with tag {dataFromStringTag} with provided dataset attribute string contents.
+ * Update all elements with provided selectors with string dataset.
+ * 
+ * @param {keyof HTMLElementTagNameMap} selectors 
  */
- export function updateFromString() {
-    document.querySelectorAll(dataFromStringTag).forEach(element => {
+export function updateSpecificFromString(selectors) {
+    document.querySelectorAll(selectors).forEach(element => {
         const text = element.dataset.fromString;
 
         if (element.dataset.fromString) {
@@ -25,10 +23,12 @@ const dataFromFileTag = '[data-from-file]'
 }
 
 /**
- * Replace all elements with tag {dataFromFileTag} with file in provided url in attribute.
+ * Update all elements with provided selectors with file url dataset.
+ * 
+ * @param {keyof HTMLElementTagNameMap} selectors 
  */
-export function updateFromFile() {
-    document.querySelectorAll(dataFromFileTag).forEach(element => {
+export function updateSpecificFromFile(selectors) {
+    document.querySelectorAll(selectors).forEach(element => {
         const url = element.dataset.fromFile;
 
         fetch(url)

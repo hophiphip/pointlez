@@ -16,7 +16,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hophiphip/pointlez.git"
+    "url": "https://github.com/hophiphip/pointlez.git"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",

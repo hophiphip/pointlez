@@ -1,5 +1,4 @@
-import { updateFromString, updateFromFile } from './update.js';
-import { start } from './lifecycle.js';
+import { updateFromString, updateFromFile, start } from './lifecycle.js';
 
 let Pointlez = {
     updateFromString,
