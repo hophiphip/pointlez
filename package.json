@@ -1,6 +1,6 @@
 {
   "name": "pointlez",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Library for templating DOM on a web page.",
   "main": "./dist/pointlez.cjs.js",
   "module": "./dist/pointlez.esm.js",
